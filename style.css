@@ -1,0 +1,108 @@
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  body {
+    background: url(images/texture_old_map.png);
+  }
+  
+  .content {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  .content h1 {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .content h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333;
+    margin: 0 0 20px;
+  }
+  .content p {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin: 0 0 20px;
+  }
+  .content p:last-child {
+    margin: 0;
+  }
+  .content a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff0;
+    color: #000;
+    text-decoration: none;
+  }
+  .content a.button:hover {
+    background: #000;
+    color: #ff0;
+  }
+  
+  .content.white {
+    background: #fff;
+    box-shadow: 0 0 45px #999;
+  }
+ 
+  /*creates horizontal boxes instead of one gray block*/
+  .accordion-container {
+    width: 100%;
+    margin: 0 0 20px;
+    clear: both;
+  }
+  /*creates gray blocks with title showing*/
+  .accordion-toggle {
+    position: relative;
+    display: block;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: 300;
+    background: #999;
+    color: #fff;
+    text-decoration: none;
+  }
+  .accordion-toggle.open {
+    background: #333;
+    color: #fff;
+  }
+  .accordion-toggle:hover {
+    background: #666;
+  }
+  /*creates plus and minus icons far right*/
+  .accordion-toggle span.toggle-icon {
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    font-size: 1.5em;
+  }
+  /*content is covered initially and will drop down*/
+  .accordion-content {
+    display: none;
+    padding: 20px;
+    overflow: auto;
+  }
+  /*content when open is positioned to right of image*/
+  .accordion-content img {
+    display: block;
+    float: left;
+    margin: 0 15px 10px 0;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* media query for mobile */
+  @media (max-width: 767px) {
+    .content {
+      width: auto;
+    }
+    .accordion-content {
+      padding: 10px 0;
+      overflow: inherit;
+    }
+  }
